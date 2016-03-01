@@ -152,6 +152,7 @@ li a:hover {
 #section_two {
 	width: 100%;
 	height: 50%;
+	position: relative;
 }
 
 #polaroids {
@@ -187,8 +188,8 @@ li a:hover {
 	background: url('images/papers.png') no-repeat;
 	float: left;
 	position: absolute;
-    right: 270px;
-    bottom: -978px;
+    right: 184px;
+    bottom: 105px;
 }
 
 #notetext {

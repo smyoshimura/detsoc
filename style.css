@@ -14,15 +14,16 @@ body {
 }
 
 #topnav {
-	width: 100%;
+	width: 1000px;
 	height: 60px;
+	margin-left: 18%;
 	display: block;
 	position: fixed;
 	margin-top: 50px; 
 	background: grey;
 	opacity: 0.9;
 	color: white;
-	z-index: 1; 
+	z-index: 3; 
 }
 
 #eyecon {
@@ -84,29 +85,31 @@ li a:hover {
 	position: relative;
 }
 
-#card a:hover {
-	background: url('images/checkmark.png') top left no-repeat;
-	background-size: contain; 
-}
-
 #hand {
-	height: 146px;
-    width: 164px;
+	height: 150px;
+    width: 196px;
     border-radius: 50%;
     position: absolute;
-    top: 175px;
-    left: 537px;
-    opacity: 0.7;
+    top: 166px;
+    left: 516px;
+    background: url('images/hand_off.png');
+}
+
+#hand:hover {
+	background: url('images/hand_on.png');
 }
 
 #key {
-	height: 191px;
-    width: 221px;
-    border-radius: 50%;
+	height: 214px;
+    width: 242px;
+    border-radius: 40%;
     position: absolute;
-    top: 347px;
-    left: 1101px;
-    opacity: 0.7;
+    top: 335px;
+    left: 1090px;
+}
+
+#key:hover {
+	background: url('images/key_on.png');
 }
 
 #horse {
@@ -114,19 +117,27 @@ li a:hover {
     width: 181px;
     border-radius: 50%;
     position: absolute;
-    top: 459px;
-    left: 269px;
-    opacity: 0.7;
+    top: 450px;
+    left: 256px;
+    background: url('images/horse_off.png');
+}
+
+#horse:hover {
+	background: url('images/horse_on.png');
 }
 
 #star {
-	height: 225px;
-    width: 248px;
-    border-radius: 50%;
+	height: 234px;
+    width: 277px;
+    border-radius: 38%;
     position: absolute;
-    top: 697px;
-    left: 824px;
-    opacity: 0.7;
+    top: 693px;
+    left: 812px;
+    background: url('images/star_off.png');
+}
+
+#star:hover {
+	background: url('images/star_on.png');
 }
 
 #spillover {
@@ -155,8 +166,9 @@ li a:hover {
 	height: 569px;
 	background: url('images/polaroid1.png') top left no-repeat;
 	position: absolute;
-	top: 0;
-	right: 0;
+	bottom: 24px;
+    right: 0;
+    z-index: 2;
 }
 
 #polaroid2 {
@@ -164,8 +176,9 @@ li a:hover {
 	height: 545px;
 	background: url('images/polaroid2.png') top left no-repeat;
 	position: absolute;
-	bottom: 0;
-	left: 0;
+	top: -111px;
+    right: -65px;
+    z-index: 1;
 }
 
 #notes {
@@ -173,14 +186,16 @@ li a:hover {
 	width: 757px;
 	background: url('images/papers.png') no-repeat;
 	float: left;
-	position: relative;
+	position: absolute;
+    right: 270px;
+    bottom: -978px;
 }
 
 #notetext {
 	transform: rotate(6deg);
     -webkit-transform: rotate(6deg);
-    margin-top: 182px;
-    margin-left: 388px;
+    margin-top: 130px;
+    margin-left: 302px;
 }
 
 #notes a {
@@ -189,14 +204,28 @@ li a:hover {
 	font-size: 2em;
 }
 
-#notes a:hover {
-	color: blue;
+#notelink1 {
+	height: 90px;
+	width: 377px;
+	display: block;
+	background: url('images/clickable_off.png') no-repeat;
+}
+
+#notelink1:hover {
+	background: url('images/clickable_on.png') no-repeat;
 }
 
 #notelink2 {
-	position: absolute;
-	bottom: -449px;
-    right: 190px;
+	height: 64px;
+    width: 366px;
+    position: absolute;
+    bottom: -619px;
+    right: 80px;
+    background: url('images/alsoclickable_off.png') no-repeat;
+}
+
+#notelink2:hover {
+	background: url('images/alsoclickable_on.png') no-repeat;
 }
 
 #footer {

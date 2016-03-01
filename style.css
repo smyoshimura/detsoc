@@ -5,6 +5,7 @@
 
 body {
 	background: black;
+	overflow-x: hidden 
 }
 
 #page_wrapper {
@@ -128,12 +129,6 @@ li a:hover {
     opacity: 0.7;
 }
 
-#spillwrapper {
-	height: 100%;
-	width: 1353px;
-	overflow-x: hidden !important;
-}
-
 #spillover {
 	height: 398px;
 	width: 172px;
@@ -225,4 +220,10 @@ li a:hover {
 	padding: 18px;
 	display: inline-block;
 	float: left;
+}
+
+@media screen and (max-width: 1362px) {
+    body {
+        overflow-x: auto;
+    }
 }

@@ -238,8 +238,7 @@ li a:hover {
 
 #googlemap {
 	width: 298px;
-	height: 97px;
-	padding: 15px;
+	height: 130px;
 	display: block;
 	float: left;
 	background: url('images/googmap.png') center no-repeat;

@@ -27,7 +27,7 @@ a {
 /* Top Navigation Bar */
 #navwrapper {
   height: 50px;
-  width: 550px;
+  width: 580px;
   position: fixed;
   z-index: 1;
   font-size: 1.7em;
@@ -44,7 +44,7 @@ a {
 
 #navbar{
   height: 31px;
-  width: 500px;
+  width: 530px;
   background: black;
   position: absolute;
   top: 13px;
@@ -55,7 +55,7 @@ a {
 
 #navbar ul {
   height: 80%;
-  width: 80%;
+  width: 90%;
   list-style: none;
   margin: auto;
   text-align: center;
@@ -64,7 +64,7 @@ a {
 #navbar ul li {
   margin: auto;
   float: left;
-  padding: 1px 10px;
+  padding: 1px 9px;
 }
 
 /*Dot Navigation*/

@@ -1,0 +1,63 @@
+@font-face {
+  font-family: Corki;
+  src: url(../Corki-Regular.otf);
+}
+
+* {
+  font-family: Corki;
+  margin:0;
+  padding:0;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Top Navigation Bar */
+#navwrapper {
+  height: 50px;
+  width: 580px;
+  position: fixed;
+  z-index: 1;
+  font-size: 1.7em;
+}
+
+#navlogo {
+  height: 170px;
+  width: 170px;
+  display: block;
+  background: url("../images/LOGO_Icon-Main2.png") no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+#navbar{
+  height: 31px;
+  width: 530px;
+  background: black;
+  position: absolute;
+  top: 13px;
+  left: 142px;
+  border-top-right-radius: 5%;
+  border-bottom-right-radius: 5%;
+}
+
+#navbar ul {
+  height: 80%;
+  width: 90%;
+  list-style: none;
+  margin: auto;
+  text-align: center;
+}
+
+#navbar ul li {
+  margin: auto;
+  float: left;
+  padding: 1px 9px;
+}

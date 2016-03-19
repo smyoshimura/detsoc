@@ -1,0 +1,133 @@
+@font-face {
+  font-family: Corki;
+  src: url(../Corki-Regular.otf);
+}
+
+* {
+  font-family: Corki;
+  margin:0;
+  padding:0;
+}
+
+body {
+  overflow-x: hidden;
+  background: black;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Top Navigation Bar */
+#navwrapper {
+  height: 50px;
+  width: 580px;
+  position: fixed;
+  z-index: 1;
+  font-size: 1.7em;
+}
+
+#navlogo {
+  height: 170px;
+  width: 170px;
+  display: block;
+  background: url("../images/LOGO_Icon-Main2.png") no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+#navbar{
+  height: 31px;
+  width: 530px;
+  background: black;
+  position: absolute;
+  top: 13px;
+  left: 142px;
+  border-top-right-radius: 5%;
+  border-bottom-right-radius: 5%;
+}
+
+#navbar ul {
+  height: 80%;
+  width: 90%;
+  list-style: none;
+  margin: auto;
+  text-align: center;
+}
+
+#navbar ul li {
+  margin: auto;
+  float: left;
+  padding: 1px 9px;
+}
+
+/*Dot Navigation*/
+#dotnavwrapper {
+  height: 90px;
+  width: 25px;
+  position: fixed;
+  top: 44%;
+  right: 0;
+  z-index: 1;
+}
+
+.dots {
+  height: 14px;
+  width: 14px;
+  margin: 10px 3px 6px 1px;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition-duration: .2s;
+}
+
+.dots:hover {
+  background: white;
+  transition-duration: .2s;
+}
+
+/*Main Body*/
+#wrapper {
+  width: 1920px;
+  height: 100%;
+  overflow: hidden;
+}
+
+#innerwrapper {
+  height: 100%;
+  width: 300%;
+  overflow: auto;
+}
+
+.innerbox {
+  height: 100%;
+  width: 1920px;
+  float: left;
+}
+
+#box1 {
+  position: relative;
+  background: slategrey;
+}
+
+#box2 {
+  position: relative;
+  background: olivedrab;
+}
+
+#box3 {
+  position: relative;
+  background: sienna;
+}
+
+#section_one, #section_two, #section_three {
+  height: 1px;
+  width: 1px;
+  padding: 10px;
+  margin: 0;
+}

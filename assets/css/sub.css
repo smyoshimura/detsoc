@@ -1,22 +1,26 @@
 @font-face {
-  font-family: Corki;
+  font-family: Corki-Regular;
   src: url(../Corki-Regular.otf);
 }
 
+@font-face {
+  font-family: Corki-Tuscan;
+  src: url(../Corki-Tuscan.otf);
+}
+
 * {
-  font-family: Corki;
   margin:0;
   padding:0;
 }
 
-body, html {
-  height: 100%;
-  width: 100%;
+body {
+  background: url('../images/BG-TILE.jpg');
 }
 
-a {
+p {
   color: white;
-  text-decoration: none;
+  font-family: Arial;
+  padding: 3px;
 }
 
 /* Top Navigation Bar */
@@ -24,40 +28,86 @@ a {
   height: 50px;
   width: 580px;
   position: fixed;
+  top: 0;
+  left: 0;
   z-index: 1;
   font-size: 1.7em;
 }
 
-#navlogo {
-  height: 170px;
-  width: 170px;
-  display: block;
-  background: url("../images/LOGO_Icon-Main2.png") no-repeat;
+#navbar{
+  height: 300px;
+  width: 700px;
+  background: url("../images/DS-NavBar-01.png") no-repeat;
   background-size: contain;
   position: absolute;
+  top: 10px;
+  left: 10px;
 }
 
-#navbar{
-  height: 31px;
-  width: 530px;
-  background: black;
-  position: absolute;
-  top: 13px;
-  left: 142px;
-  border-top-right-radius: 5%;
-  border-bottom-right-radius: 5%;
+#navbar a {
+  color: black;
+  text-decoration: none;
+  font-family: Corki-Regular;
 }
 
 #navbar ul {
   height: 80%;
-  width: 90%;
+  width: 75%;
   list-style: none;
-  margin: auto;
+  margin-left: auto;
   text-align: center;
 }
 
 #navbar ul li {
   margin: auto;
   float: left;
-  padding: 1px 9px;
+  padding: 2px 10px;
+}
+
+/* FOOTER */
+.subfooter {
+  height: 300px;
+  width: 100%;
+  text-align: center;
+  background-image: linear-gradient(rgba(5, 5, 5, 0), rgba(5, 5, 5, 1));
+}
+
+/* ABOUT */
+.header, .header2 {
+  font-family: Corki-Tuscan;
+  color: white;
+  font-size: 2.5em;
+}
+
+.header {
+  margin: auto;
+  text-align: center;
+}
+
+.header2 {
+  height: 75px;
+}
+
+#about_header {
+  margin: auto;
+  height: 300px;
+  width: 500px;
+}
+
+#header_one {
+  height: 80px;
+  width: 300px;
+  margin-top: 100px;
+  background: url('../images/DS-LINES_2points-01.png') no-repeat;
+  background-size: contain;
+}
+
+#faqwrapper {
+  height: 500px;
+  width: 100%;
+}
+
+#history {
+  margin: auto;
+  width: 500px;
 }

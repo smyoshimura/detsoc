@@ -23,6 +23,11 @@ p {
   padding: 3px;
 }
 
+#fullwrapper {
+  width: 1300px;
+  margin: auto;
+}
+
 /* Top Navigation Bar */
 #navwrapper {
   height: 50px;
@@ -30,12 +35,13 @@ p {
   position: fixed;
   top: 0;
   left: 0;
+  //transform: translateX(-5%);
   z-index: 1;
   font-size: 1.7em;
 }
 
 #navbar{
-  height: 300px;
+  height: 150px;
   width: 700px;
   background: url("../images/DS-NavBar-01.png") no-repeat;
   background-size: contain;
@@ -68,46 +74,76 @@ p {
 .subfooter {
   height: 300px;
   width: 100%;
+  font-family: Corki-Tuscan;
+  color: white;
+  font-size: 1.2em;
   text-align: center;
   background-image: linear-gradient(rgba(5, 5, 5, 0), rgba(5, 5, 5, 1));
+}
+
+#footer_logo {
+  height: 150px;
+  width: 150px;
+  display: inline-block;
+  background: url('../images/DS-SiteLogo-02.png') no-repeat;
+  background-size: contain;
 }
 
 /* ABOUT */
 .header, .header2 {
   font-family: Corki-Tuscan;
   color: white;
-  font-size: 2.5em;
 }
 
 .header {
   margin: auto;
   text-align: center;
+  font-size: 2.8em;
 }
 
 .header2 {
-  height: 75px;
+  height: 50px;
+  width: 400px;
+  margin: 20px 0 5px 0;
+  padding-top: 13px;
+  font-size: 2em;
+  background: url('../images/DS-LINES_1points-01-01.png') no-repeat, url('../images/DS-LINES_1points-01-01.png') bottom no-repeat;
+  background-size: contain;
 }
 
 #about_header {
   margin: auto;
-  height: 300px;
-  width: 500px;
+  height: 250px;
+  width: 725px;
 }
 
 #header_one {
-  height: 80px;
-  width: 300px;
+  height: 75px;
+  width: 410px;
   margin-top: 100px;
-  background: url('../images/DS-LINES_2points-01.png') no-repeat;
+  padding-top: 35px;
+  background: url('../images/DS-LINES_2points-01.png') no-repeat, url('../images/DS-LINES_2points-01.png') bottom no-repeat;
   background-size: contain;
 }
 
-#faqwrapper {
-  height: 500px;
-  width: 100%;
+#expectwrapper {
+  height: 800px;
+  width: 50%; 
+}
+
+#expect_left {
+  margin-left: 120px;
 }
 
 #history {
   margin: auto;
   width: 500px;
+}
+
+#history_logo {
+  height: 150px;
+  width: 150px;
+  display: inline-block;
+  background: url('../images/DS-SiteLogo-01.png') no-repeat;
+  background-size: contain;
 }

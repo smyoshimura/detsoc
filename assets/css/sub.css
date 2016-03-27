@@ -74,6 +74,7 @@ p {
 .subfooter {
   height: 300px;
   width: 100%;
+  min-width: 1300px;
   font-family: Corki-Tuscan;
   color: white;
   font-size: 1.2em;
@@ -81,12 +82,27 @@ p {
   background-image: linear-gradient(rgba(5, 5, 5, 0), rgba(5, 5, 5, 1));
 }
 
-#footer_logo {
+#footer_wrapper {
+  width: 278px;
   height: 150px;
-  width: 150px;
+  margin: auto;
+  position: relative;
+  top: 100px;
+}
+
+#footer_logo {
+  height: 160px;
+  width: 160px;
   display: inline-block;
+  float: left;
   background: url('../images/DS-SiteLogo-02.png') no-repeat;
   background-size: contain;
+}
+
+.footer_text {
+  display: inline-block;
+  float: left;
+  margin-top: 60px;
 }
 
 /* ABOUT */
@@ -96,6 +112,8 @@ p {
 }
 
 .header {
+  height: 145px;
+  width: 605px;
   margin: auto;
   text-align: center;
   font-size: 2.8em;
@@ -132,18 +150,34 @@ p {
 }
 
 #expect_left {
-  margin-left: 120px;
+  margin-left: 142px;
 }
 
 #history {
   margin: auto;
-  width: 500px;
+  width: 850px;
+  position: relative;
+}
+
+.history_header_text {
+  display: inline-block;
+  float: left;
+  margin-top: 48px
+}
+
+#history_text_body p {
+  padding: 1%;
 }
 
 #history_logo {
-  height: 150px;
-  width: 150px;
+  height: 155px;
+  width: 160px;
   display: inline-block;
+  float: left;
   background: url('../images/DS-SiteLogo-01.png') no-repeat;
   background-size: contain;
+}
+
+#history_text_body {
+  clear: left;
 }

@@ -193,6 +193,29 @@ p {
   background-size: contain;
 }
 
+#faq_body {
+  width: 1300px;
+  height: 2000px;
+  margin: auto;  
+}
+
+.faq_row {
+  width: 100%;
+  height: 33%;
+}
+
+.faq_card {
+  width: 25%;
+  height: auto;
+  padding: 3%;
+  display: inline-block;
+  position: relative;
+}
+
+.card_front, .card_back {
+  position: absolute;
+}
+
 /* BOOKING */
 #booking_header {
   height: 75px;

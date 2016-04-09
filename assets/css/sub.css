@@ -23,7 +23,7 @@ p {
   padding: 3px;
 }
 
-#fullwrapper {
+.fullwrapper {
   width: 1300px;
   margin: auto;
 }
@@ -36,7 +36,7 @@ p {
   top: 0;
   left: 0;
   //transform: translateX(-5%);
-  z-index: 1;
+  z-index: 3;
   font-size: 1.7em;
 }
 
@@ -195,25 +195,53 @@ p {
 
 #faq_body {
   width: 1300px;
-  height: 2000px;
+  height: 1500px;
   margin: auto;  
 }
 
 .faq_row {
-  width: 100%;
-  height: 33%;
+  width: 90%;
+  height: 32%;
+  margin: auto;
+   -webkit-perspective: 1000px;
+  perspective: 1000px;
+  
 }
 
 .faq_card {
-  width: 25%;
-  height: auto;
-  padding: 3%;
+  width: 27%;
+  height: 90%;
   display: inline-block;
+  margin: 3%;
   position: relative;
+  transition: 0.8s;
+  transform-style: preserve-3d;
 }
 
-.card_front, .card_back {
+.faq_card:hover {
+  -ms-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.card_q, .card_a {
+  height: 100%;
+  width: 100%;
   position: absolute;
+  backface-visibility: hidden;
+}
+
+.card_q {
+  z-index: 2;
+  -ms-transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}
+
+.card_a {
+  -ms-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 /* ROOMS */

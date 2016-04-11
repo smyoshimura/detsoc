@@ -13,8 +13,13 @@
   padding:0;
 }
 
+html {
+  position: relative;
+}
+
 body {
   background: url('../images/BG-TILE.jpg');
+  margin-bottom: 325px;
 }
 
 p {
@@ -35,7 +40,6 @@ p {
   position: fixed;
   top: 0;
   left: 0;
-  //transform: translateX(-5%);
   z-index: 3;
   font-size: 1.7em;
 }
@@ -75,6 +79,8 @@ p {
   height: 325px;
   width: 100%;
   min-width: 1300px;
+  position: absolute;
+  bottom: 0;
   font-family: Corki-Tuscan;
   color: white;
   font-size: 1.2em;
@@ -245,6 +251,45 @@ p {
 }
 
 /* ROOMS */
+#rooms_header {
+  height: 75px;
+  width: 390px;
+  margin: 100px auto 25px auto;
+  padding-top: 35px;
+  background: url('../images/DS-LINES_2points-01.png') no-repeat, url('../images/DS-LINES_2points-01.png') bottom no-repeat;
+  background-size: contain;
+}
+
+#rooms_body {
+  height: 100vh;
+  width: 800px;
+  margin: auto;
+  color: white;
+  text-align: center;
+}
+
+#rooms_stats_wrapper {
+  font-family: Corki-Tuscan;
+  font-size: 2em;
+}
+
+#rooms_stats_a {
+  height: 45px;
+  width: 390px;
+  margin: 5px auto 5px auto;
+  padding-top: 25px;
+  background: url('../images/DS-LINES_2points-01.png') no-repeat;
+  background-size: contain;
+}
+
+#rooms_stats_b {
+  height: 40px;
+  width: 390px;
+  margin: 5px auto 5px auto;
+  padding-bottom: 15px;
+  background: url('../images/DS-LINES_Rounded-01.png') bottom no-repeat;
+  background-size: contain;
+}
 
 /* BOOKING */
 #booking_header {
@@ -257,7 +302,39 @@ p {
 }
 
 #booking_body {
-  height: 450px;
+  height: 100vh;
+}
+
+#booking_widget {
+  height: 500px;
+  width: 80%;
+  margin: auto;
 }
 
 /* CONTACT */
+#contact_header {
+  height: 75px;
+  width: 390px;
+  margin: 100px auto 25px auto;
+  padding-top: 35px;
+  background: url('../images/DS-LINES_2points-01.png') no-repeat, url('../images/DS-LINES_2points-01.png') bottom no-repeat;
+  background-size: contain;
+}
+
+#contact_body {
+  height: 100vh;
+}
+
+/* CREDITS */
+#credits_header {
+  height: 75px;
+  width: 390px;
+  margin: 100px auto 25px auto;
+  padding-top: 35px;
+  background: url('../images/DS-LINES_2points-01.png') no-repeat, url('../images/DS-LINES_2points-01.png') bottom no-repeat;
+  background-size: contain;
+}
+
+#credits_body {
+  height: 100vh;
+}

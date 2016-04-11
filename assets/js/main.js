@@ -5,8 +5,8 @@ $(function () {
 
     var wipeAnimation = new TimelineMax()
 
-    .to("#innerwrapper", 1, {x: "-33.33%"})
-    .to("#innerwrapper", 1, {x: "-66.66%"})
+    .to("#innerwrapper", 1, {x: -(viewwidth * .3333) + "px"})
+    .to("#innerwrapper", 1, {x: -(viewwidth * .6666) + "px"})
 
     new ScrollMagic.Scene({
         triggerElement: "#wrapper",

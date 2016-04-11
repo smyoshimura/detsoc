@@ -268,7 +268,7 @@ p {
   text-align: center;
 }
 
-#rooms_stats_wrapper {
+#rooms_stats_wrapper, #rooms_booknow {
   font-family: Corki-Tuscan;
   font-size: 2em;
 }

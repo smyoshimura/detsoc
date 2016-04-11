@@ -92,15 +92,16 @@ body, html {
   height: 100%;
   width: 300%;
   overflow: auto;
+  background: url('../images/SITE_INDEX_1080_final.jpg') no-repeat;
 }
 
-.innerbox {
+/*.innerbox {
   height: 100%;
   width: 1920px;
   float: left;
-}
+}*/
 
-#box1 {
+/*#box1 {
   position: relative;
   background: slategrey;
 }
@@ -113,11 +114,4 @@ body, html {
 #box3 {
   position: relative;
   background: sienna;
-}
-
-#section_one, #section_two, #section_three {
-  height: 1px;
-  width: 1px;
-  padding: 10px;
-  margin: 0;
-}
+}*/

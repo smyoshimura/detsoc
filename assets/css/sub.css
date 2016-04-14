@@ -262,7 +262,8 @@ p {
 
 #rooms_body {
   height: 100vh;
-  width: 800px;
+  min-height: 900px;
+  width: 1300px;
   margin: auto;
   color: white;
   text-align: center;
@@ -273,10 +274,14 @@ p {
   font-size: 2em;
 }
 
+.rooms_stats_sub {
+  margin: 0 36px;
+}
+
 #rooms_stats_a {
   height: 45px;
-  width: 390px;
-  margin: 5px auto 5px auto;
+  width: 415px;
+  margin: 5px auto 0 auto;
   padding-top: 25px;
   background: url('../images/DS-LINES_2points-01.png') no-repeat;
   background-size: contain;
@@ -284,11 +289,32 @@ p {
 
 #rooms_stats_b {
   height: 40px;
-  width: 390px;
-  margin: 5px auto 5px auto;
-  padding-bottom: 15px;
+  width: 415px;
+  margin: 0 auto 15px auto;
+  padding-bottom: 20px;
   background: url('../images/DS-LINES_Rounded-01.png') bottom no-repeat;
   background-size: contain;
+}
+
+#rooms_text {
+  width: 515px;
+  margin: auto;
+}
+
+#rooms_text p {
+  padding: 10px;
+}
+
+#rooms_booknow {
+  height: 55px;
+  width: 210px;
+  font-size: 3em;
+  margin: 15px auto;
+}
+
+#rooms_booknow a {
+  color: white;
+  text-decoration: none;
 }
 
 /* BOOKING */
@@ -303,6 +329,7 @@ p {
 
 #booking_body {
   height: 100vh;
+  min-height: 1000px;
 }
 
 #booking_widget {

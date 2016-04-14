@@ -15,6 +15,7 @@ body {
 
 body, html {
   height: 100%;
+  max-height: 1080px;
   width: 100%;
 }
 
@@ -91,9 +92,91 @@ body, html {
 #innerwrapper {
   height: 100%;
   width: 300%;
+  position: relative;
   overflow: auto;
   background: url('../images/SITE_INDEX_1080_final.jpg') no-repeat;
 }
+
+#card_nav {
+  height: 370px;
+  width: 470px;
+  position: absolute;
+  top: 300px;
+  left: 700px;
+}
+
+#button_one {
+  height: 100px;
+  width: 120px;
+  position: relative;
+  top: 39px;
+  left: 28px;
+  background: url('../images/OFF_about.png') top left no-repeat;
+}
+
+#button_one:hover {
+  height: 100px;
+  width: 120px;
+  position: relative;
+  top: 39px;
+  left: 28px;
+  background: url('../images/ON_about.png') top left no-repeat;
+}
+
+#button_two {
+  height: 100px;
+  width: 115px;
+  position: relative;
+  top: -61px;
+  left: 326px;
+  background: url('../images/OFF_rooms.png') top right no-repeat;
+}
+
+#button_two:hover {
+  height: 100px;
+  width: 115px;
+  position: relative;
+  top: -61px;
+  left: 326px;
+  background: url('../images/ON_rooms.png') top right no-repeat;
+}
+
+#button_three {
+  height: 100px;
+  width: 119px;
+  position: relative;
+  top: 23px;
+  left: 27px;
+  background: url('../images/OFF_faqs.png') bottom left no-repeat;
+}
+
+#button_three:hover {
+  height: 100px;
+  width: 119px;
+  position: relative;
+  top: 23px;
+  left: 27px;
+  background: url('../images/ON_faqs.png') bottom left no-repeat;
+}
+
+#button_four {
+  height: 100px;
+  width: 115px;
+  position: relative;
+  bottom: 77px;
+  right: -327px;  
+  background: url('../images/OFF_contact.png') bottom right no-repeat;
+}
+
+#button_four:hover {
+  height: 100px;
+  width: 115px;
+  position: relative;
+  bottom: 77px;
+  right: -327px;  
+  background: url('../images/ON_contact.png') bottom right no-repeat;
+}
+
 
 /*.innerbox {
   height: 100%;

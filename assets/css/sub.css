@@ -141,6 +141,10 @@ p {
   width: 725px;
 }
 
+#about_header p {
+  line-height: 22px;
+}
+
 #header_one {
   height: 75px;
   width: 410px;
@@ -159,34 +163,28 @@ p {
   margin-left: 142px;
 }
 
-#history {
+#expect_left div p {
+  line-height: 22px;
+}
+
+#about_booking {
   margin: auto;
   margin-top: 30px;
   width: 850px;
   position: relative;
 }
 
-.history_header_text {
-  display: inline-block;
-  float: left;
-  margin-top: 48px
-}
-
-#history_text_body p {
-  padding: 1%;
-}
-
-#history_logo {
-  height: 155px;
-  width: 160px;
-  display: inline-block;
-  float: left;
-  background: url('../images/DS-SiteLogo-01.png') no-repeat;
+#about_booking_header {
+  height: 88px;
+  width: 605px;
+  padding-top: 44px;
+  background: url('../images/DS-LINES_2points-01.png') no-repeat, url('../images/DS-LINES_2points-01.png') bottom no-repeat;
   background-size: contain;
 }
 
-#history_text_body {
-  clear: left;
+#about_booking_text p {
+  padding: 1%;
+  line-height: 22px;
 }
 
 /* FAQ */

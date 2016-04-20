@@ -1,12 +1,19 @@
 $(function () {
     var viewwidth = $(window).width();
+    var viewheight = $(window).height();
 
     var controller = new ScrollMagic.Controller();
 
-    var wipeAnimation = new TimelineMax()
-
-    .to("#innerwrapper", 1, {x: -(5364 - (viewwidth * 2)) + "px"})
-    .to("#innerwrapper", 1, {x: -(5364 - viewwidth) + "px"})
+    if (viewheight > 768) {
+        var wipeAnimation = new TimelineMax()
+        .to("#innerwrapper", 1, {x: -(5364 - (viewwidth * 2)) + "px"})
+        .to("#innerwrapper", 1, {x: -(5364 - viewwidth) + "px"})
+    }
+    else {
+        var wipeAnimation = new TimelineMax()
+        .to("#innerwrapper", 1, {x: -(3814 - (viewwidth * 2)) + "px"})
+        .to("#innerwrapper", 1, {x: -(3814 - viewwidth) + "px"})
+    }
 
     new ScrollMagic.Scene({
         triggerElement: "#wrapper",
@@ -19,24 +26,24 @@ $(function () {
     .addIndicators()
     .addTo(controller);
 
-    // // change behaviour of controller to animate scroll instead of jump
-    // controller.scrollTo(function (newpos) {
-    //     TweenMax.to(window, 0.5, {scrollTo: {x: newpos}});
-    // });
+    var $window = $(window);
+    var scrollTime = 0.1;
+    var scrollDistance = 100;
 
-    // $(document).on("click", "a[href^='#']", function (e) {
-    //     var id = $(this).attr("href");
-    //     if ($(id).length > 0) {
-    //         e.preventDefault();
+    $window.on("mousewheel DOMMouseScroll", function(event){
 
-    //         // trigger scroll
-    //         controller.scrollTo(id);
+        if (viewheight <= 768) {
+            event.preventDefault(); 
 
-    //             // if supported by the browser we can even update the URL.
-    //         if (window.history && window.history.pushState) {
-    //             history.pushState("", document.title, id);
-    //         }
-    //     }
-    // });
+            var delta = event.originalEvent.wheelDelta/120 || -event.originalEvent.detail/3;
+            var scrollTop = $window.scrollTop();
+            var finalScroll = scrollTop - parseInt(delta*scrollDistance);
+
+            TweenMax.to($window, scrollTime, {
+                scrollTo : { y: finalScroll, autoKill:true },
+                    //ease: Power1.easeOut,
+                    overwrite: 5                            
+                });
+        }
+    });
 });
-

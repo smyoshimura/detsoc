@@ -1,0 +1,365 @@
+@font-face {
+  font-family: Corki-Regular;
+  src: url(../Corki-Regular.otf);
+}
+
+@font-face {
+  font-family: Corki-Tuscan;
+  src: url(../Corki-Tuscan.otf);
+}
+
+* {
+  margin:0;
+  padding:0;
+}
+
+html {
+  position: relative;
+}
+
+body {
+  background: url('../images/BG-TILE.jpg');
+  margin-bottom: 325px;
+}
+
+p {
+  color: white;
+  font-family: Arial;
+  padding: 3px;
+}
+
+.fullwrapper {
+  width: 1300px;
+  margin: auto;
+}
+
+/* Top Navigation Bar */
+#navwrapper {
+  height: 50px;
+  width: 580px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  font-size: 1.7em;
+}
+
+#navbar{
+  height: 150px;
+  width: 700px;
+  background: url("../images/DS-NavBar-01.png") no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+#navbar a {
+  color: black;
+  text-decoration: none;
+  font-family: Corki-Regular;
+}
+
+#navbar ul {
+  height: 80%;
+  width: 75%;
+  list-style: none;
+  margin-left: auto;
+  text-align: center;
+}
+
+#navbar ul li {
+  margin: auto;
+  float: left;
+  padding: 2px 10px;
+}
+
+/* FOOTER */
+.subfooter {
+  height: 325px;
+  width: 100%;
+  min-width: 1300px;
+  position: absolute;
+  bottom: 0;
+  font-family: Corki-Tuscan;
+  color: white;
+  font-size: 1.2em;
+  text-align: center;
+  background-image: linear-gradient(rgba(5, 5, 5, 0), rgba(5, 5, 5, 1), rgba(5, 5, 5, 1));
+}
+
+#footer_wrapper {
+  width: 278px;
+  height: 150px;
+  margin: auto;
+  position: relative;
+  top: 130px;
+}
+
+#footer_logo {
+  height: 160px;
+  width: 160px;
+  display: inline-block;
+  float: left;
+  background: url('../images/DS-SiteLogo-02.png') no-repeat;
+  background-size: contain;
+}
+
+.footer_text {
+  display: inline-block;
+  float: left;
+  margin-top: 60px;
+}
+
+/* ABOUT */
+.header, .header2 {
+  font-family: Corki-Tuscan;
+  color: white;
+}
+
+.header {
+  height: 145px;
+  width: 605px;
+  margin: auto;
+  text-align: center;
+  font-size: 2.8em;
+}
+
+.header2 {
+  height: 50px;
+  width: 400px;
+  margin: 20px 0 5px 0;
+  padding-top: 13px;
+  font-size: 2em;
+  background: url('../images/DS-LINES_1points-01-01.png') no-repeat, url('../images/DS-LINES_1points-01-01.png') bottom no-repeat;
+  background-size: contain;
+}
+
+#about_header {
+  margin: auto;
+  height: 250px;
+  width: 725px;
+}
+
+#about_header p {
+  line-height: 22px;
+}
+
+#header_one {
+  height: 75px;
+  width: 410px;
+  margin-top: 100px;
+  padding-top: 35px;
+  background: url('../images/DS-LINES_2points-01.png') no-repeat, url('../images/DS-LINES_2points-01.png') bottom no-repeat;
+  background-size: contain;
+}
+
+#expectwrapper {
+  height: 800px;
+  width: 50%; 
+}
+
+#expect_left {
+  margin-left: 142px;
+}
+
+#expect_left div p {
+  line-height: 22px;
+}
+
+#about_booking {
+  margin: auto;
+  margin-top: 30px;
+  width: 850px;
+  position: relative;
+}
+
+#about_booking_header {
+  height: 88px;
+  width: 605px;
+  padding-top: 44px;
+  background: url('../images/DS-LINES_2points-01.png') no-repeat, url('../images/DS-LINES_2points-01.png') bottom no-repeat;
+  background-size: contain;
+}
+
+#about_booking_text p {
+  padding: 1%;
+  line-height: 22px;
+}
+
+/* FAQ */
+#faq_header {
+  height: 75px;
+  width: 410px;
+  margin-top: 100px;
+  padding-top: 35px;
+  background: url('../images/DS-LINES_2points-01.png') no-repeat, url('../images/DS-LINES_2points-01.png') bottom no-repeat;
+  background-size: contain;
+}
+
+#faq_body {
+  width: 1300px;
+  height: 1500px;
+  margin: auto;  
+}
+
+.faq_row {
+  width: 90%;
+  height: 32%;
+  margin: auto;
+   -webkit-perspective: 1000px;
+  perspective: 1000px;
+  
+}
+
+.faq_card {
+  width: 27%;
+  height: 90%;
+  display: inline-block;
+  margin: 3%;
+  position: relative;
+  transition: 0.8s;
+  transform-style: preserve-3d;
+}
+
+.faq_card:hover {
+  -ms-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.card_q, .card_a {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.card_q {
+  z-index: 2;
+  -ms-transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}
+
+.card_a {
+  -ms-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+/* ROOMS */
+#rooms_header {
+  height: 75px;
+  width: 390px;
+  margin: 100px auto 25px auto;
+  padding-top: 35px;
+  background: url('../images/DS-LINES_2points-01.png') no-repeat, url('../images/DS-LINES_2points-01.png') bottom no-repeat;
+  background-size: contain;
+}
+
+#rooms_body {
+  height: 100vh;
+  min-height: 900px;
+  width: 1300px;
+  margin: auto;
+  color: white;
+  text-align: center;
+}
+
+#rooms_stats_wrapper, #rooms_booknow {
+  font-family: Corki-Tuscan;
+  font-size: 2em;
+}
+
+.rooms_stats_sub {
+  margin: 0 36px;
+}
+
+#rooms_stats_a {
+  height: 45px;
+  width: 415px;
+  margin: 5px auto 0 auto;
+  padding-top: 25px;
+  background: url('../images/DS-LINES_2points-01.png') no-repeat;
+  background-size: contain;
+}
+
+#rooms_stats_b {
+  height: 40px;
+  width: 415px;
+  margin: 0 auto 15px auto;
+  padding-bottom: 20px;
+  background: url('../images/DS-LINES_Rounded-01.png') bottom no-repeat;
+  background-size: contain;
+}
+
+#rooms_text {
+  width: 515px;
+  margin: auto;
+}
+
+#rooms_text p {
+  padding: 10px;
+}
+
+#rooms_booknow {
+  height: 55px;
+  width: 210px;
+  font-size: 3em;
+  margin: 15px auto;
+}
+
+#rooms_booknow a {
+  color: white;
+  text-decoration: none;
+}
+
+/* BOOKING */
+#booking_header {
+  height: 75px;
+  width: 390px;
+  margin: 100px auto 25px auto;
+  padding-top: 35px;
+  background: url('../images/DS-LINES_2points-01.png') no-repeat, url('../images/DS-LINES_2points-01.png') bottom no-repeat;
+  background-size: contain;
+}
+
+#booking_body {
+  height: 100vh;
+  min-height: 1000px;
+}
+
+#booking_widget {
+  height: 500px;
+  width: 80%;
+  margin: auto;
+}
+
+/* CONTACT */
+#contact_header {
+  height: 75px;
+  width: 390px;
+  margin: 100px auto 25px auto;
+  padding-top: 35px;
+  background: url('../images/DS-LINES_2points-01.png') no-repeat, url('../images/DS-LINES_2points-01.png') bottom no-repeat;
+  background-size: contain;
+}
+
+#contact_body {
+  height: 100vh;
+}
+
+/* CREDITS */
+#credits_header {
+  height: 75px;
+  width: 390px;
+  margin: 100px auto 25px auto;
+  padding-top: 35px;
+  background: url('../images/DS-LINES_2points-01.png') no-repeat, url('../images/DS-LINES_2points-01.png') bottom no-repeat;
+  background-size: contain;
+}
+
+#credits_body {
+  height: 100vh;
+}

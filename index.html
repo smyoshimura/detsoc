@@ -1,60 +1,57 @@
-<!doctype html>
-
-<html lang="en">
+<!DOCTYPE html>
+<html>
 
 <head>
-	<meta charset="utf-8">
-	<title>Detectives' Society</title>
-	<meta name="description" content="Detectives' Society">
-	<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>THE GRAND DETECTIVES SOCIETY</title>
+
+  <link type="text/css" rel="stylesheet" href="assets/css/main.css">
+
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/plugins/ScrollToPlugin.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+  <script type="text/javascript" src="assets/js/main.js"></script>
+
 </head>
 
 <body>
-	<div id="page_wrapper">
-		<div id="topnav">
-			<span id="eyecon"></span>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Products</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-		</div>
 
-		<div id="bodywrapper">
-			<div id="section_one">
-				<div id="card">
-					<a href="#" id="hand"></a>
-					<a href="#" id="key"></a>
-					<a href="#" id="horse"></a>
-					<a href="#" id="star"></a>
-					<div id="spillwrapper">
-						<div id="spillover"></div>
-					</div>
-				</div>
-			</div>
+  <div id="navwrapper">
+    <div id="navbar">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="rooms.html">ROOMS</a></li>
+        <li><a href="booking.html">BOOKING</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
 
-			<div id="section_two">
-				<div id="polaroids">
-					<div id="polaroid1"></div>
-					<div id="polaroid2"></div>
-				</div>
-				<div id="notes">
-					<div id="notetext">
-						<a href="#" id="notelink1">Click me!</a>
-						<a href="#" id="notelink2">Click me too!</a>
-					</div>
-				</div>
-			</div>
-		</div>
+	<div id="wrapper">
+    <div id="innerwrapper">
+      <div class="" id="card_nav">
+        <a href="about.html"><div id="button_one"></div></a>
+        <a href="rooms.html"><div id="button_two"></div></a>
+        <a href="faq.html"><div id="button_three"></div></a>
+        <a href="contact.html"><div id="button_four"></div></a>
+      </div>
 
-		<div id="footer">
-			<span id="googlemap"></span>
-			<p>An address.</p>
-			<p>Some text.</p>
-			<p>Other text.</p>
-		</div>
-	</div>
+      <div id="room_card">
+      </div>
+
+      <div id="letter">
+        <a href="rooms.html"><div id="letter_room"></div></a>
+        <a href="booking.html"><div id="letter_book"></div></a>
+      </div>
+    </div>
+  </div>
+
 </body>
 
 </html>

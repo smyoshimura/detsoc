@@ -1,0 +1,353 @@
+@font-face {
+  font-family: Corki-Regular;
+  src: url(../Corki-Regular.otf);
+}
+
+* {
+  margin:0;
+  padding:0;
+}
+
+body {
+  overflow-x: hidden;
+  background: black;
+}
+
+body, html {
+  height: 100%;
+  max-height: 1080px;
+  width: 100%;
+}
+
+/* Top Navigation Bar */
+#navwrapper {
+  height: 50px;
+  width: 580px;
+  position: fixed;
+  z-index: 1;
+  font-size: 1.7em;
+}
+
+#navbar{
+  height: 300px;
+  width: 700px;
+  background: url("../images/DS-NavBar-01.png") no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+#navbar a {
+  color: black;
+  text-decoration: none;
+  font-family: Corki-Regular;
+}
+
+#navbar ul {
+  height: 80%;
+  width: 75%;
+  list-style: none;
+  margin-left: auto;
+  text-align: center;
+}
+
+#navbar ul li {
+  margin: auto;
+  float: left;
+  padding: 2px 10px;
+}
+
+/*Main Body*/
+#wrapper {
+  width: 1920px;
+  height: 100%;
+  overflow: hidden;
+}
+
+#innerwrapper {
+  height: 1080px;
+  width: 300%;
+  position: relative;
+  overflow: auto;
+  background: url('../images/SITE_INDEX_1080_final.jpg') no-repeat;
+}
+
+#card_nav {
+  height: 370px;
+  width: 470px;
+  position: absolute;
+  top: 300px;
+  left: 700px;
+}
+
+#button_one {
+  height: 100px;
+  width: 120px;
+  position: relative;
+  top: 39px;
+  left: 28px;
+  background: url('../images/OFF_about.png') top left no-repeat;
+}
+
+#button_one:hover {
+  height: 100px;
+  width: 120px;
+  position: relative;
+  top: 39px;
+  left: 28px;
+  background: url('../images/ON_about.png') top left no-repeat;
+}
+
+#button_two {
+  height: 100px;
+  width: 115px;
+  position: relative;
+  top: -61px;
+  left: 326px;
+  background: url('../images/OFF_rooms.png') top right no-repeat;
+}
+
+#button_two:hover {
+  height: 100px;
+  width: 115px;
+  position: relative;
+  top: -61px;
+  left: 326px;
+  background: url('../images/ON_rooms.png') top right no-repeat;
+}
+
+#button_three {
+  height: 100px;
+  width: 119px;
+  position: relative;
+  top: 23px;
+  left: 27px;
+  background: url('../images/OFF_faqs.png') bottom left no-repeat;
+}
+
+#button_three:hover {
+  height: 100px;
+  width: 119px;
+  position: relative;
+  top: 23px;
+  left: 27px;
+  background: url('../images/ON_faqs.png') bottom left no-repeat;
+}
+
+#button_four {
+  height: 100px;
+  width: 115px;
+  position: relative;
+  bottom: 77px;
+  right: -327px;  
+  background: url('../images/OFF_contact.png') bottom right no-repeat;
+}
+
+#button_four:hover {
+  height: 100px;
+  width: 115px;
+  position: relative;
+  bottom: 77px;
+  right: -327px;  
+  background: url('../images/ON_contact.png') bottom right no-repeat;
+}
+
+#room_card {
+  height: 261px;
+  width: 521px;
+  position: absolute;
+  top: 158px;
+  left: 2250px;
+  background: url('../images/DAVINCIS_IMG1.png') no-repeat;
+}
+
+#letter {
+  height: 471px;
+  width: 784px;
+  position: absolute;
+  top: 507px;
+  left: 2685px;
+  background: url('../images/DAVINCIS_SLOT1.png') no-repeat;
+}
+
+#letter_room {
+  height: 84px;
+  width: 234px;
+  position: relative;
+  top: 115px;
+  left: 331px;
+}
+
+#letter_room:hover {
+  background: url('../images/DV_mouseover.png') no-repeat;
+}
+
+#letter_book {
+  height: 56px;
+  width: 123px;
+  position: relative;
+  top: 312px;
+  left: 543px;
+}
+
+#letter_book:hover {
+  background: url('../images/BOOK_mouseover.png') no-repeat;
+}
+
+@media screen and (max-height: 768px) {
+  body, html {
+    height: 100%;
+    max-height: 768px;
+    width: 100%;
+  }
+
+  #wrapper {
+    width: 1366px;
+    height: 768px;
+    overflow: hidden;
+  }
+
+  #innerwrapper {
+    height: 768px;
+    width: 300%;
+    position: relative;
+    overflow: auto;
+    background: url('../images/SITE_INDEX_1080_final.jpg') no-repeat;
+    background-size: 3814px;
+  }
+
+  #card_nav {
+    height: 263px;
+    width: 337px;
+    position: absolute;
+    top: 212px;
+    left: 496px;
+  }
+
+  #button_one {
+    height: 75px;
+    width: 85px;
+    position: relative;
+    top: 29px;
+    left: 22px;
+    background: url('../images/OFF_about.png') top left no-repeat;
+    background-size: 296px;
+  }
+
+  #button_one:hover {
+    height: 75px;
+    width: 85px;
+    position: relative;
+    top: 29px;
+    left: 22px;
+    background: url('../images/ON_about.png') top left no-repeat;
+    background-size: 296px;
+  }
+
+  #button_two {
+    height: 75px;
+    width: 85px;
+    position: relative;
+    top: -46px;
+    left: 231px;
+    background: url('../images/OFF_rooms.png') top right no-repeat;
+    background-size: 296px;
+  }
+
+  #button_two:hover {
+    height: 75px;
+    width: 85px;
+    position: relative;
+    top: -46px;
+    left: 231px;
+    background: url('../images/ON_rooms.png') top right no-repeat;
+    background-size: 296px;
+  }
+
+  #button_three {
+    height: 75px;
+    width: 85px;
+    position: relative;
+    top: 6px;
+    left: 21px;
+    background: url('../images/OFF_faqs.png') bottom left no-repeat;
+    background-size: 296px;
+  }
+
+  #button_three:hover {
+    height: 75px;
+    width: 85px;
+    position: relative;
+    top: 6px;
+    left: 21px;
+    background: url('../images/ON_faqs.png') bottom left no-repeat;
+    background-size: 296px;
+  }
+
+  #button_four {
+    height: 75px;
+    width: 85px;
+    position: relative;
+    bottom: 69px;
+    right: -231px;
+    background: url('../images/OFF_contact.png') bottom right no-repeat;
+    background-size: 294px;
+  }
+
+  #button_four:hover {
+    height: 75px;
+    width: 85px;
+    position: relative;
+    bottom: 69px;
+    right: -231px;  
+    background: url('../images/ON_contact.png') bottom right no-repeat;
+    background-size: 294px;
+  }
+
+  #room_card {
+    height: 185px;
+    width: 370px;
+    position: absolute;
+    top: 112px;
+    left: 1600px;
+    background: url('../images/DAVINCIS_IMG1.png') no-repeat;
+    background-size: 370px;
+  }
+
+  #letter {
+    height: 471px;
+    width: 784px;
+    position: absolute;
+    top: 358px;
+    left: 1906px;
+    background: url('../images/DAVINCIS_SLOT1.png') no-repeat;
+    background-size: 564px;
+  }
+
+  #letter_room {
+    height: 58px;
+    width: 167px;
+    position: relative;
+    top: 83px;
+    left: 238px;
+  }
+
+  #letter_room:hover {
+    background: url('../images/DV_mouseover.png') no-repeat;
+    background-size: 169px;
+  }
+
+  #letter_book {
+    height: 56px;
+    width: 123px;
+    position: relative;
+    top: 226px;
+    left: 390px; 
+  }
+
+  #letter_book:hover {
+    background: url('../images/BOOK_mouseover.png') no-repeat;
+    background-size: 89px;
+  }
+}

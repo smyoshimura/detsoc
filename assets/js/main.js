@@ -1,6 +1,14 @@
 $(function () {
     var viewwidth = $(window).width();
     var viewheight = $(window).height();
+    $("#wrapper").css("width", viewwidth + "px");
+
+    $(window).resize(function() {
+        viewwidth = $(window).width();
+        viewheight = $(window).height();
+        $("#wrapper").css("width", viewwidth + "px");
+        $("#innerwrapper").css("width", (viewwidth * 3) + "px");
+    });
 
     var controller = new ScrollMagic.Controller();
 
@@ -18,12 +26,11 @@ $(function () {
     new ScrollMagic.Scene({
         triggerElement: "#wrapper",
         triggerHook: "onLeave",
-        duration: "500%"
+        duration: "400%"
     })
 
     .setPin("#wrapper")
     .setTween(wipeAnimation)
-    .addIndicators()
     .addTo(controller);
 
     var $window = $(window);

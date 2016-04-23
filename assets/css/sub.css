@@ -362,4 +362,6 @@ p {
 
 #credits_body {
   height: 100vh;
+  text-align: center;
+  line-height: 30px;
 }

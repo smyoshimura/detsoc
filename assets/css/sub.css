@@ -283,12 +283,27 @@ p {
 
 /* ROOMS */
 #rooms_header {
-  height: 75px;
-  width: 390px;
-  margin: 100px auto 25px auto;
-  padding-top: 35px;
-  background: url('../images/DS-LINES_2points-01.png') no-repeat, url('../images/DS-LINES_2points-01.png') bottom no-repeat;
-  background-size: contain;
+  width: 1300px;
+  margin: auto;
+}
+
+#davinci_header {
+  height: 574px;
+  width: 1064px;
+  margin: auto;
+  margin-bottom: 20px;
+  position: relative;
+  left: 5px;
+  background: url('../images/DAVINCI.png') no-repeat;
+}
+
+#room_icons {
+  height: 161px;
+  width: 994px;
+  margin: auto;
+  position: relative;
+  left: 5px;
+  background: url('../images/DAVINCI_ICONS.png') no-repeat;
 }
 
 #rooms_body {
@@ -297,39 +312,11 @@ p {
   width: 1300px;
   margin: auto;
   color: white;
-  text-align: center;
-}
-
-#rooms_stats_wrapper, #rooms_booknow {
-  font-family: Corki-Tuscan;
-  font-size: 2em;
-}
-
-.rooms_stats_sub {
-  margin: 0 36px;
-}
-
-#rooms_stats_a {
-  height: 45px;
-  width: 415px;
-  margin: 5px auto 0 auto;
-  padding-top: 25px;
-  background: url('../images/DS-LINES_2points-01.png') no-repeat;
-  background-size: contain;
-}
-
-#rooms_stats_b {
-  height: 40px;
-  width: 415px;
-  margin: 0 auto 15px auto;
-  padding-bottom: 20px;
-  background: url('../images/DS-LINES_Rounded-01.png') bottom no-repeat;
-  background-size: contain;
 }
 
 #rooms_text {
   width: 515px;
-  margin: auto;
+  text-align: left;
 }
 
 #rooms_text p {
@@ -337,9 +324,10 @@ p {
 }
 
 #rooms_booknow {
+  font-family: Corki-Tuscan;
   height: 55px;
   width: 210px;
-  font-size: 3em;
+  font-size: 2em;
   margin: 15px auto;
 }
 

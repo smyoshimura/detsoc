@@ -119,6 +119,37 @@ p {
 }
 
 /* ABOUT */
+#about_wrapper {
+  position: relative;
+}
+
+#about_bottom {
+  height: 610px;
+  width: 1338px;
+  overflow-x: hidden;
+  background: url('../images/ABOUTbottom.png') no-repeat;
+}
+
+#about_left {
+  height: 1954px;
+  width: 762px;
+  position: absolute;
+  top: -240px;
+  left: -288px;
+  overflow-x: hidden;
+  background: url('../images/ABOUTleft.png') no-repeat;
+}
+
+#about_right {
+  height: 2025px;
+  width: 901px;
+  top: -140px;
+  right: -275px;
+  position: absolute;
+  overflow-x: hidden;
+  background: url('../images/ABOUTright.png') no-repeat;
+}
+
 .header, .header2 {
   font-family: Corki-Tuscan;
   color: white;
@@ -149,7 +180,7 @@ p {
 }
 
 #about_header p {
-  line-height: 22px;
+  text-align: justify;
 }
 
 #header_one {
@@ -171,7 +202,10 @@ p {
 }
 
 #expect_left div p {
-  line-height: 22px;
+  text-align: justify;
+  line-height: 19px;
+  margin-bottom: 40px;
+  margin-top: 10px;
 }
 
 #about_booking {
@@ -189,9 +223,35 @@ p {
   background-size: contain;
 }
 
-#about_booking_text p {
+#history {
+  margin: auto;
+  margin-top: 30px;
+  width: 850px;
+  position: relative;
+}
+
+.history_header_text {
+  display: inline-block;
+  float: left;
+  margin-top: 48px
+}
+
+#history_text_body p {
   padding: 1%;
-  line-height: 22px;
+  text-align: justify;
+}
+
+#history_logo {
+  height: 155px;
+  width: 160px;
+  display: inline-block;
+  float: left;
+  background: url('../images/DS-SiteLogo-01.png') no-repeat;
+  background-size: contain;
+}
+
+#history_text_body {
+  clear: left;
 }
 
 /* FAQ */

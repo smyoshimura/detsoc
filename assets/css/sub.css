@@ -67,6 +67,10 @@ p {
   font-family: Corki-Regular;
 }
 
+#navbar a:hover {
+  color: #e93738;
+}
+
 #navbar ul {
   height: 80%;
   width: 75%;
@@ -157,10 +161,10 @@ p {
 
 .header {
   height: 145px;
-  width: 605px;
+  width: 716px;
   margin: auto;
   text-align: center;
-  font-size: 2.8em;
+  font-size: 3.5em;
 }
 
 .header2 {
@@ -168,14 +172,15 @@ p {
   width: 400px;
   margin: 20px 0 5px 0;
   padding-top: 13px;
-  font-size: 2em;
+  padding-bottom: 10px;
+  font-size: 2.5em;
   background: url('../images/DS-LINES_1points-01-01.png') no-repeat, url('../images/DS-LINES_1points-01-01.png') bottom no-repeat;
   background-size: contain;
 }
 
 #about_header {
   margin: auto;
-  height: 250px;
+  height: 255px;
   width: 725px;
 }
 
@@ -187,14 +192,14 @@ p {
   height: 75px;
   width: 410px;
   margin-top: 100px;
-  padding-top: 35px;
+  padding-top: 25px;
   background: url('../images/DS-LINES_2points-01.png') no-repeat, url('../images/DS-LINES_2points-01.png') bottom no-repeat;
   background-size: contain;
 }
 
 #expectwrapper {
   height: 800px;
-  width: 50%; 
+  width: 50%;
 }
 
 #expect_left {
@@ -204,8 +209,8 @@ p {
 #expect_left div p {
   text-align: justify;
   line-height: 19px;
-  margin-bottom: 40px;
-  margin-top: 10px;
+  margin-bottom: 45px;
+  margin-top: 5px;
 }
 
 #about_booking {
@@ -225,7 +230,7 @@ p {
 
 #history {
   margin: auto;
-  margin-top: 30px;
+  margin-top: 45px;
   width: 850px;
   position: relative;
 }
@@ -418,25 +423,20 @@ p {
 #booking_widget {
   height: 1000px;
   width: 1000px;
+  padding-left: 10px;
   margin: 225px auto;
 }
 
 /* CONTACT */
-#contact_header {
-  height: 75px;
-  width: 390px;
-  margin: 100px auto 25px auto;
-  padding-top: 35px;
-  background: url('../images/DS-LINES_2points-01.png') no-repeat, url('../images/DS-LINES_2points-01.png') bottom no-repeat;
-  background-size: contain;
-}
 
 #contact_body {
   height: 1520px;
   width: 100%;
+  margin-top: 85px;
   min-width: 1300px;
   overflow-x: hidden;
-  background: url('../images/CONTACT_temp.png') top center no-repeat;
+  background: url('../images/CONTACT_temp.png') no-repeat;
+  background-position: -10px 0px;
 }
 
 /* CREDITS */

@@ -45,6 +45,10 @@ body, html {
   font-family: Corki-Regular;
 }
 
+#navbar a:hover {
+  color: #e93738;
+}
+
 #navbar ul {
   height: 80%;
   width: 75%;

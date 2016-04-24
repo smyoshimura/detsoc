@@ -20,6 +20,13 @@ html {
 body {
   background: url('../images/BG-TILE.jpg');
   margin-bottom: 325px;
+  overflow-x: hidden; 
+}
+
+@media screen and (max-width: 1300px) {
+  body {
+    overflow-x: auto;
+  }
 }
 
 p {
@@ -188,6 +195,14 @@ p {
 }
 
 /* FAQ */
+#faq_fullwrapper {
+  height: 100vh;
+  min-height: 2000px;
+  width: 1300px;
+  margin: auto;
+  position: relative;
+}
+
 #faq_header {
   height: 75px;
   width: 410px;
@@ -200,16 +215,34 @@ p {
 #faq_body {
   width: 1300px;
   height: 1500px;
-  margin: auto;  
+  margin: 0 auto 25px auto;
+  position: relative;
+}
+
+#faq_left {
+  height: 1983px;
+  width: 763px;
+  position: absolute;
+  top: 20px;
+  left: -670px;
+  background: url('../images/FAQleft.png') no-repeat top left;
+}
+
+#faq_right {
+  height: 2089px;
+  width: 729px;
+  position: absolute;
+  top: -95px;
+  right: -555px;
+  background: url('../images/FAQright.png') no-repeat top right;
 }
 
 .faq_row {
   width: 90%;
   height: 32%;
   margin: auto;
-   -webkit-perspective: 1000px;
+  -webkit-perspective: 1000px;
   perspective: 1000px;
-  
 }
 
 .faq_card {
@@ -327,13 +360,17 @@ p {
 
 #booking_body {
   height: 100vh;
-  min-height: 1000px;
+  min-height: 1588px;
+  width: 100%;
+  min-width: 1300px;
+  overflow-x: hidden; 
+  background: url('../images/BOOKING.png') top center no-repeat;
 }
 
 #booking_widget {
-  height: 500px;
-  width: 80%;
-  margin: auto;
+  height: 1000px;
+  width: 1000px;
+  margin: 225px auto;
 }
 
 /* CONTACT */
@@ -347,7 +384,11 @@ p {
 }
 
 #contact_body {
-  height: 100vh;
+  height: 1520px;
+  width: 100%;
+  min-width: 1300px;
+  overflow-x: hidden;
+  background: url('../images/CONTACT_temp.png') top center no-repeat;
 }
 
 /* CREDITS */
@@ -362,4 +403,6 @@ p {
 
 #credits_body {
   height: 100vh;
+  text-align: center;
+  line-height: 30px;
 }

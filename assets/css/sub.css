@@ -416,8 +416,8 @@ p {
 }
 
 .rooms_text_points {
-  font-family: "Arial Black";
   font-size: 22px;
+  font-weight: bolder;
 }
 
 #rooms_text p {

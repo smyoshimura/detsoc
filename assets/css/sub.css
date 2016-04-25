@@ -347,6 +347,28 @@ p {
 }
 
 /* ROOMS */
+#rooms_wrapper {
+  position: relative;
+}
+
+#rooms_topleft {
+  height: 734px;
+  width: 410px;
+  position: absolute;
+  top: 104px;
+  left: -332px;
+  background: url('../images/topLEFT.png') no-repeat;
+}
+
+#rooms_topright {
+  height: 437px;
+  width: 385px;
+  position: absolute;
+  top: -48px;
+  right: -270px;
+  background: url('../images/topRIGHT.png') no-repeat;
+}
+
 #rooms_header {
   width: 1300px;
   margin: auto;
@@ -355,8 +377,7 @@ p {
 #davinci_header {
   height: 574px;
   width: 1064px;
-  margin: auto;
-  margin-bottom: 20px;
+  margin: 44px auto 20px auto; 
   position: relative;
   left: 5px;
   background: url('../images/DAVINCI.png') no-repeat;
@@ -373,32 +394,65 @@ p {
 
 #rooms_body {
   height: 100vh;
-  min-height: 900px;
-  width: 1300px;
-  margin: auto;
+  min-height: 1200px;
+  width: 500px;
   color: white;
+}
+
+#rooms_body_header {
+  height: 82px;
+  width: 467px;
+  margin: 5px auto;
+  background: url('../images/ROOMStitle.png') no-repeat;
 }
 
 #rooms_text {
-  width: 515px;
-  text-align: left;
+  width: 100%;
+  text-align: justify;
+}
+
+#rooms_text p:first-child {
+  text-indent: 40px;
+}
+
+.rooms_text_points {
+  font-size: 22px;
+  font-weight: bolder;
 }
 
 #rooms_text p {
-  padding: 10px;
+  padding: 8px;
 }
 
 #rooms_booknow {
-  font-family: Corki-Tuscan;
-  height: 55px;
-  width: 210px;
-  font-size: 2em;
+  height: 47px;
+  width: 260px;
   margin: 15px auto;
+  background: url('../images/ROOMSbook_OFF.png') no-repeat;
 }
 
-#rooms_booknow a {
-  color: white;
-  text-decoration: none;
+#rooms_booknow:hover {
+  background: url('../images/ROOMSbook_ON.png') no-repeat;
+}
+
+#rooms_bottomleft {
+  height: 615px;
+  width: 337px;
+  position: absolute;
+  top: 1122px;
+  left: -205px;
+  background: url('../images/bottomLEFT.png') no-repeat;
+  z-index: -1;
+}
+
+#rooms_bottomright {
+  height: 1673px;
+  width: 1612px;
+  position: absolute;
+  top: 410px;
+  right: -490px;
+  background: url('../images/bottomRIGHT.png') no-repeat;
+  z-index: -1;
 }
 
 /* BOOKING */

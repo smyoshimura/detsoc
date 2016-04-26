@@ -346,6 +346,17 @@ p {
   transform: rotateY(180deg);
 }
 
+#faq_ask_card {
+  height: 314px;
+  width: 439px;
+  margin: 40px auto;
+  background: url('../images/FAQask_OFF.png') no-repeat;
+}
+
+#faq_ask_card:hover {
+  background: url('../images/FAQask_ON.png') no-repeat;
+}
+
 /* ROOMS */
 #rooms_wrapper {
   position: relative;

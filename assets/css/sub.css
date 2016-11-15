@@ -500,8 +500,14 @@ p {
   margin-top: 85px;
   min-width: 1300px;
   overflow-x: hidden;
-  background: url('../images/CONTACT_temp.png') no-repeat;
+  background: url('../images/CONTACT_noclick.png') no-repeat;
   background-position: -10px 0px;
+}
+
+#contact_mapphoto {
+  height: 500px;
+  width: 500px;
+  background: url('../images/CONTACT_map.png') no-repeat;
 }
 
 /* CREDITS */

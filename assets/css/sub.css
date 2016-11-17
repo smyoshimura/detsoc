@@ -363,12 +363,12 @@ p {
 }
 
 #rooms_topleft {
-  height: 734px;
-  width: 410px;
+  height: 790px;
+  width: 451px;
   position: absolute;
-  top: 104px;
+  top: 70px;
   left: -332px;
-  background: url('../images/topLEFT.png') no-repeat;
+  background: url('../images/ROOMS_topLEFT.png') no-repeat;
 }
 
 #rooms_topright {
@@ -489,7 +489,7 @@ p {
   height: 1000px;
   width: 1000px;
   padding-left: 10px;
-  margin: 225px auto;
+  margin: 240px auto;
 }
 
 /* CONTACT */
@@ -510,57 +510,93 @@ p {
 }
 
 #mag_facebook {
-  height: 100px;
-  width: 100px;
+  height: 145px;
+  width: 135px;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 524px;
+  left: 451px;
   background: url('../images/facebook_OFF.png') no-repeat;
+  background-position: 0px -32px;
+}
+
+#mag_facebook:hover {
+  background: url('../images/facebook_ON.png')no-repeat;
+  background-position: 0px -32px;
 }
 
 #mag_twitter {
-  height: 100px;
-  width: 100px;
+  height: 145px;
+  width: 146px;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 491px;
+  left: 630px;
   background: url('../images/twitter_OFF.png') no-repeat;
+  background-position: -180px 0px;
+}
+
+#mag_twitter:hover {
+  background: url('../images/twitter_ON.png') no-repeat;
+  background-position: -180px 0px;
 }
 
 #mag_instagram {
-  height: 100px;
-  width: 100px;
+  height: 123px;
+  width: 130px;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 492px;
+  left: 810px;
   background: url('../images/instagram_OFF.png') no-repeat;
+  background-position: -363px 0px;
+}
+
+#mag_instagram:hover {
+  background: url('../images/instagram_ON.png') no-repeat;
+  background-position: -363px 0px;
 }
 
 #mag_phone {
-  height: 100px;
-  width: 100px;
+  height: 70px;
+  width: 183px;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 717px;
+  left: 630px;
   background: url('../images/phone_OFF.png') no-repeat;
+  background-position: -190px -218px;
+}
+
+#mag_phone:hover {
+  background: url('../images/phone_ON.png') no-repeat;
+  background-position: -190px -218px;
 }
 
 #mag_email {
-  height: 100px;
-  width: 100px;
+  height: 70px;
+  width: 307px;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 756px;
+  left: 573px;
   background: url('../images/email_OFF.png') no-repeat;
+  background-position: -131px -259px;
+}
+
+#mag_email:hover {
+  background: url('../images/email_ON.png') no-repeat;
+  background-position: -131px -259px;
 }
 
 #mag_address {
-  height: 100px;
-  width: 100px;
+  height: 140px;
+  width: 365px;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 784px;
+  left: 564px;
   background: url('../images/address_OFF.png') no-repeat;
+  background-position: -110px -288px;
+}
+
+#mag_address:hover {
+  background: url('../images/address_ON.png') no-repeat;
+  background-position: -110px -288px;
 }
 
 #contact_mapphoto {
@@ -569,7 +605,15 @@ p {
   position: absolute;
   top: 1019px;
   left: 200px;
-  background: url(../images/CONTACT_map.png) no-repeat;
+  background: url('../images/CONTACT_map.png') no-repeat;
+}
+
+#contact_mapphoto_link {
+  height: 693px;
+  width: 595px;
+  position: absolute;
+  top: 1019px;
+  left: 200px;
 }
 
 #contact_askcard {
@@ -578,7 +622,16 @@ p {
   position: absolute;
   top: 990px;
   left: 675px;
-  background: url(../images/CONTACT_askOFF.png) no-repeat;
+  background: url('../images/CONTACT_askOFF.png') no-repeat;
+}
+
+#contact_askcard:hover {
+  height: 373px;
+  width: 447px;
+  position: absolute;
+  top: 990px;
+  left: 675px;
+  background: url('../images/CONTACT_askON.png') no-repeat;
 }
 
 #contact_body {

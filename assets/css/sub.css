@@ -350,11 +350,17 @@ p {
   height: 314px;
   width: 439px;
   margin: 40px auto;
-  background: url('../images/FAQask_OFF.png') no-repeat;
+  background: url('../images/FAQ_ask_OFF.png') no-repeat;
 }
 
 #faq_ask_card:hover {
-  background: url('../images/FAQask_ON.png') no-repeat;
+  background: url('../images/FAQ_ask_ON.png') no-repeat;
+}
+
+#faq_ask_card a {
+  display: block;
+  height: 100%;
+  width: 100%;
 }
 
 /* ROOMS */

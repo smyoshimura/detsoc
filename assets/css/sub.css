@@ -272,49 +272,51 @@ p {
   height: 75px;
   width: 410px;
   margin-top: 100px;
-  padding-top: 35px;
+  padding-top: 25px;
   background: url('../images/DS-LINES_2points-01.png') no-repeat, url('../images/DS-LINES_2points-01.png') bottom no-repeat;
   background-size: contain;
 }
 
 #faq_body {
-  width: 1300px;
+  width: 1250px;
   height: 1500px;
   margin: 0 auto 25px auto;
   position: relative;
 }
 
 #faq_left {
-  height: 1983px;
-  width: 763px;
+  height: 1880px;
+  width: 725px;
   position: absolute;
   top: 20px;
-  left: -670px;
+  left: -590px;
   background: url('../images/FAQleft.png') no-repeat top left;
+  background-size: contain;
 }
 
 #faq_right {
-  height: 2089px;
-  width: 729px;
+  height: 1995px;
+  width: 695px;
   position: absolute;
   top: -95px;
-  right: -555px;
+  right: -470px;
   background: url('../images/FAQright.png') no-repeat top right;
+  background-size: contain;
 }
 
 .faq_row {
-  width: 90%;
-  height: 32%;
+  width: 82%;
+  height: 31%;
   margin: auto;
   -webkit-perspective: 1000px;
   perspective: 1000px;
 }
 
 .faq_card {
-  width: 27%;
-  height: 90%;
+  width: 285px;
+  height: 390px;
   display: inline-block;
-  margin: 3%;
+  margin: 3% 2.5%;
   position: relative;
   transition: 0.8s;
   transform-style: preserve-3d;
@@ -347,14 +349,16 @@ p {
 }
 
 #faq_ask_card {
-  height: 314px;
-  width: 439px;
+  height: 295px;
+  width: 410px;
   margin: 40px auto;
   background: url('../images/FAQ_ask_OFF.png') no-repeat;
+  background-size: contain;
 }
 
 #faq_ask_card:hover {
   background: url('../images/FAQ_ask_ON.png') no-repeat;
+  background-size: contain;
 }
 
 #faq_ask_card a {

@@ -28,15 +28,23 @@
       </div>
     </div>
 
-	<div class="header" id="booking_header">BOOKING</div>
+    <!-- <div class="header" id="booking_header">BOOKING</div> -->
+	
+ </div>
 
   <div id="booking_body">
     <div class="body" id="booking_widget">
-      <script type="text/javascript" src="https://bookeo.com/widget.js?a=415544PYXTH153882AAD8D"></script>
-    </div>
+      <div id="bookify-wrapper"></div>
+        <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "https://detectivessociety.bookifyapp.com/integration/platform";
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'bookify-pi'));
+        </script> 
+      </div>
   </div>
-	
- </div>
 
   <div class="subfooter">
     <div id="footer_wrapper">

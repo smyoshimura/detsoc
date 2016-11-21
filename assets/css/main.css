@@ -9,6 +9,7 @@
 }
 
 body {
+  overflow-y: auto; 
   overflow-x: hidden;
   background: black;
 }
@@ -29,7 +30,7 @@ body, html {
 }
 
 #navbar{
-  height: 300px;
+  height: 135px;
   width: 700px;
   background: url("../images/DS-NavBar-01.png") no-repeat;
   background-size: contain;
@@ -42,6 +43,10 @@ body, html {
   color: black;
   text-decoration: none;
   font-family: Corki-Regular;
+}
+
+#navbar a:hover {
+  color: #e93738;
 }
 
 #navbar ul {
@@ -68,8 +73,9 @@ body, html {
 #innerwrapper {
   height: 1080px;
   width: 300%;
+  min-width: 5346px;
   position: relative;
-  overflow: auto;
+  overflow: hidden;
   background: url('../images/SITE_INDEX_1080_final.jpg') no-repeat;
 }
 
@@ -99,6 +105,12 @@ body, html {
   background: url('../images/ON_about.png') top left no-repeat;
 }
 
+#button_one a {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
 #button_two {
   height: 100px;
   width: 115px;
@@ -115,6 +127,12 @@ body, html {
   top: -61px;
   left: 326px;
   background: url('../images/ON_rooms.png') top right no-repeat;
+}
+
+#button_two a {
+  height: 100%;
+  width: 100%;
+  display: block;
 }
 
 #button_three {
@@ -135,6 +153,12 @@ body, html {
   background: url('../images/ON_faqs.png') bottom left no-repeat;
 }
 
+#button_three a {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
 #button_four {
   height: 100px;
   width: 115px;
@@ -153,6 +177,28 @@ body, html {
   background: url('../images/ON_contact.png') bottom right no-repeat;
 }
 
+#button_four a {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+#photo_map {
+  height: 181px;
+  width: 306px;
+  position: absolute;
+  top: 734px;
+  left: 567px;
+  background: url('../images/INDEX_map.png') center no-repeat;
+}
+
+#photo_map a {
+  height: 88%;
+  width: 81%;
+  display: block;
+  transform: rotate(-12deg) skew(23deg);
+}
+
 #room_card {
   height: 261px;
   width: 521px;
@@ -160,6 +206,12 @@ body, html {
   top: 158px;
   left: 2250px;
   background: url('../images/DAVINCIS_IMG1.png') no-repeat;
+}
+
+#room_card a {
+  height: 100%;
+  width: 100%;
+  display: block;
 }
 
 #letter {
@@ -171,9 +223,18 @@ body, html {
   background: url('../images/DAVINCIS_SLOT1.png') no-repeat;
 }
 
+#letter_photos {
+  height: 500px;
+  width: 500px;
+  position: relative;
+  top: 238px;
+  left: 3px;
+  background: url('../images/INDEX_roomphotos1.png') no-repeat;
+}
+
 #letter_room {
-  height: 84px;
-  width: 234px;
+  height: 79px;
+  width: 230px;
   position: relative;
   top: 115px;
   left: 331px;
@@ -183,16 +244,42 @@ body, html {
   background: url('../images/DV_mouseover.png') no-repeat;
 }
 
+#letter_room a {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
 #letter_book {
-  height: 56px;
-  width: 123px;
+  height: 54px;
+  width: 119px;
   position: relative;
-  top: 312px;
+  top: 317px;
   left: 543px;
 }
 
 #letter_book:hover {
   background: url('../images/BOOK_mouseover.png') no-repeat;
+}
+
+#letter_book a {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+#secret_page {
+  height: 54px;
+  width: 56px;
+  position: relative;
+  top: 963px;
+  left: 3417px;
+}
+
+#secret_page a {
+  height: 100%;
+  width: 100%;
+  display: block;
 }
 
 @media screen and (max-height: 768px) {
@@ -211,8 +298,9 @@ body, html {
   #innerwrapper {
     height: 768px;
     width: 300%;
+    min-width: 3814px;
     position: relative;
-    overflow: auto;
+    overflow: hidden;
     background: url('../images/SITE_INDEX_1080_final.jpg') no-repeat;
     background-size: 3814px;
   }
@@ -305,6 +393,17 @@ body, html {
     background-size: 294px;
   }
 
+  #photo_map {
+    height: 133px;
+    width: 228px;
+    position: absolute;
+    top: 521px;
+    left: 397px;
+    /*transform: rotate(-11deg) skew(24deg);*/
+    background: url('../images/INDEX_map.png') center no-repeat;
+    background-size: 230px;
+  }
+
   #room_card {
     height: 185px;
     width: 370px;
@@ -349,5 +448,13 @@ body, html {
   #letter_book:hover {
     background: url('../images/BOOK_mouseover.png') no-repeat;
     background-size: 89px;
+  }
+
+  #secret_page {
+    height: 39px;
+    width: 40px;
+    position: relative;
+    top: 685px;
+    left: 2430px;
   }
 }

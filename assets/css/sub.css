@@ -404,6 +404,44 @@ p {
   width: 100%;
 }
 
+#mobile_faq {
+  display: none;
+}
+
+@media screen and (max-width: 680px) {
+  #faq_fullwrapper, .subfooter {
+    display: none;
+  }
+
+  #mobile_faq {
+    display: block;
+    color: white;
+    
+    padding: 0 1%;
+  }
+
+  a, a:focus, a:hover, a:active, a:visited {
+    color: white;
+    text-decoration: none;
+  }
+
+  h3 {
+    font-family: Corki-Regular;
+    border-bottom: 1px solid white;
+  }
+
+  .panel {
+    font-family: arial;
+    background: black;
+    color: white;
+  }
+
+  .panel-body {
+    border-top: none !important; 
+    font-size: 1.5rem;
+  }
+}
+
 /* ROOMS */
 #rooms_wrapper {
   position: relative;

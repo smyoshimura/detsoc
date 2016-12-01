@@ -551,6 +551,36 @@ p {
   z-index: -1;
 }
 
+#mobile_rooms {
+  display: none;
+}
+
+@media screen and (max-width: 680px) {
+  #rooms_wrapper, .subfooter, #navwrapper {
+    display: none;
+  }
+
+  #mobile_rooms {
+    width: 100%;
+    display: block;
+    text-align: justify;
+  }
+
+  .rooms_body_header {
+    width: 95%;
+    height: auto;
+    display: block;
+    margin: 3% auto;
+  }
+
+  .rooms_davinci {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 15px;
+  }
+}
+
 /* BOOKING */
 #booking_header {
   height: 75px;

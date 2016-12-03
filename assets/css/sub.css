@@ -40,6 +40,20 @@ p {
   margin: auto;
 }
 
+.mobile_back {
+  display: none;
+}
+
+@media screen and (max-width: 680px) {
+  .mobile_back {
+    font-family: "Corki-Regular";
+    font-size: 2.5rem !important;
+    margin-top: 25px;
+    display: block;
+    text-align: center;
+  }
+}
+
 /* Top Navigation Bar */
 #navwrapper {
   height: 50px;
@@ -161,10 +175,10 @@ p {
 
 .header {
   height: 145px;
-  width: 716px;
+  width: 718px;
   margin: auto;
   text-align: center;
-  font-size: 3.5em;
+  font-size: 55px;
 }
 
 .header2 {
@@ -416,8 +430,13 @@ p {
   #mobile_faq {
     display: block;
     color: white;
-    
     padding: 0 1%;
+  }
+
+  #faq_header {
+    margin-top: 15px;
+    height: 108px;
+    padding-top: 25px;
   }
 
   a, a:focus, a:hover, a:active, a:visited {
@@ -603,6 +622,7 @@ p {
 #booking_widget {
   height: 1000px;
   width: 1000px;
+  overflow-y: auto;
   padding-left: 10px;
   margin: 240px auto;
 }
@@ -754,6 +774,27 @@ p {
   min-height: 1729px;
   width: 500px;
   color: white;
+}
+
+#mobile_contact {
+  display: none;
+}
+
+@media screen and (max-width: 680px) {
+  #contact_wrapper {
+    display: none;
+  }
+
+  #mobile_contact {
+    display: block;
+    color: white;
+  }
+
+  #mobile_contact p {
+    font-family: "Corki-Regular";
+    font-size: 2rem;
+    text-align: center;
+  }
 }
 
 /* CREDITS */

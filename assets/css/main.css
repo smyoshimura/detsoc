@@ -527,7 +527,7 @@ body, html {
   }
 
   #mobile-header {
-    padding-top: 15px;
+    padding-top: 25px;
     text-align: center;
      background-image: linear-gradient(rgba(5, 5, 5, 1), rgba(5, 5, 5, 0), rgba(5, 5, 5, 0));
   }
@@ -538,7 +538,7 @@ body, html {
   }
 
   .mobile-nav {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     margin-top: 5px; 
     float: left;

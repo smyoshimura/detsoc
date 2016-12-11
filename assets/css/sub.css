@@ -52,6 +52,10 @@ p {
     display: block;
     text-align: center;
   }
+
+  .book_now {
+    margin: 15px 0;
+  }
 }
 
 /* Top Navigation Bar */
@@ -285,6 +289,7 @@ p {
   #mobile_about {
     display: inline-block;
     padding: 0 2.5%;
+    text-align: center;
   }
 
   #about_wrapper, .subfooter {
@@ -293,6 +298,14 @@ p {
 
   #header_one {
     margin-top: 15px;
+  }
+
+  .mobile-about-wrapper .header2, .mobile-about-wrapper p, #about_booking_text {
+    text-align: left;
+  }
+
+  .mobile-about-wrapper p:first-child {
+    text-align: center;
   }
 
   #history_logo {
@@ -431,12 +444,14 @@ p {
     display: block;
     color: white;
     padding: 0 1%;
+    text-align: center;
   }
 
   #faq_header {
-    margin-top: 15px;
-    height: 108px;
-    padding-top: 25px;
+    margin-top: 10px;
+    height: 88px;
+    width: 100%;
+    padding-top: 10px;
   }
 
   a, a:focus, a:hover, a:active, a:visited {
@@ -447,6 +462,10 @@ p {
   h3 {
     font-family: Corki-Regular;
     border-bottom: 1px solid white;
+  }
+
+  #mobile-faq-wrapper {
+    text-align: left;
   }
 
   .panel {
@@ -526,10 +545,6 @@ p {
   text-align: justify;
 }
 
-#rooms_text p:first-child {
-  text-indent: 40px;
-}
-
 .rooms_text_points {
   font-size: 22px;
   font-weight: bolder;
@@ -582,7 +597,7 @@ p {
   #mobile_rooms {
     width: 100%;
     display: block;
-    text-align: justify;
+    text-align: center;
   }
 
   .rooms_body_header {
@@ -597,6 +612,10 @@ p {
     height: auto;
     display: block;
     margin-top: 15px;
+  }
+
+  #rooms_text {
+    text-align: justify;
   }
 }
 
@@ -781,6 +800,10 @@ p {
 }
 
 @media screen and (max-width: 680px) {
+  #header_one {
+    width: 100%;
+  }
+
   #contact_wrapper {
     display: none;
   }
@@ -788,12 +811,12 @@ p {
   #mobile_contact {
     display: block;
     color: white;
+    text-align: center;
   }
 
   #mobile_contact p {
     font-family: "Corki-Regular";
     font-size: 2rem;
-    text-align: center;
   }
 }
 

@@ -235,7 +235,7 @@ body, html {
 #letter_photos {
   height: 500px;
   width: 500px;
-  position: relative;
+  position: absolute;
   top: 238px;
   left: 3px;
   background: url('../images/INDEX_roomphotos1.png') no-repeat;
@@ -479,6 +479,15 @@ body, html {
   #letter_room:hover {
     background: url('../images/DV_mouseover.png') no-repeat;
     background-size: 169px;
+  }
+
+  #letter_photos {
+    height: 135px;
+    width: 234px;
+    position: absolute;
+    top: 168px;
+    left: 0px;
+    background-size: 233px;
   }
 
   #letter_book {
